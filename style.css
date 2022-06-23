@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+}
+
+.nav .nav__nav-bar {
+  margin: 2rem;
+  padding-left: 30rem;
+}
+.nav .nav__nav-bar .nav__nav-link {
+  padding: 1rem;
+}/*# sourceMappingURL=style.css.map */
