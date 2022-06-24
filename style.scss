@@ -1,7 +1,14 @@
 @use "./variables" as *;
 
-.container{
-    display: flex;
+.page{
+    
+
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+    }
 }
 
 .nav{
@@ -9,11 +16,46 @@
 
 
     .nav__nav-bar{
-        margin: 2rem;
-        padding-left: 30rem;
+        margin: 0.5rem;
+        padding-left: 0.5rem;
 
         .nav__nav-link{
-            padding: 1rem;
+            padding: 0.25rem;
         }
+    }
+}
+
+.projects__grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+
+    .projects__grid-item{
+        background-color: $projects-background-color;
+        margin-bottom: 2rem;
+        padding: 3rem;
+        
+    }
+    
+}
+
+
+.about{
+
+    .about__dropsection{
+        
+        .about__dropsection-title{
+
+        }
+
+        
+    }
+}
+
+@media screen and (min-width: 360px){
+    page{
+        max-width: 360px;
     }
 }
