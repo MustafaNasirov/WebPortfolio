@@ -1,56 +1,141 @@
 @use "./variables" as *;
 
+
+*{
+ margin: 0;   
+}
+
+html{
+    background-color: $navbar-color;
+}
+
 .page{
-    
-
-
+    color: $text-color;
+    font-family: $font-robotoC;
     .container{
         display: flex;
         flex-direction: column;
+        background-color: $background-color
         
     }
 }
 
 .nav{
-    
-
+    text-align: center;
 
     .nav__nav-bar{
         margin: 0.5rem;
         padding-left: 0.5rem;
+       
 
         .nav__nav-link{
+            color: $text-color;
             padding: 0.25rem;
+            
         }
     }
 }
 
-.projects__grid{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    
+.home{
 
-    .projects__grid-item{
-        background-color: $projects-background-color;
-        margin-bottom: 2rem;
-        padding: 3rem;
+    .home__details{
+        padding: 1rem 1.5rem;
+
+        .home__name{
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+        .home__title{
+            margin-top: 1rem;
+        }
         
+        .home__description{
+            padding: 1.5rem 0rem;
+        }
     }
-    
 }
 
+.projects{
+
+    .projects__grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .projects__title{
+            margin-bottom: 1rem;
+        }
+
+        .projects__grid-item{
+            background-color: $projects-background-color;
+            margin-bottom: 2rem;
+            padding: 4rem 7rem;
+            
+        }
+        
+    }
+}
 
 .about{
 
-    .about__dropsection{
+    .about__details{
+        padding: 1rem 1.5rem;
         
-        .about__dropsection-title{
-
+        .about__title{
+            margin-bottom: 1rem;
         }
 
+        .about__description{
+          
+        }
+
+    }
         
+    .about__grid{
+        margin: 1rem 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        .about__dropsection{
+            padding: 0rem 1rem;
+
+            .about__drop-title{
+                margin-bottom: 1rem;
+            }
+            
+            .about__dropbtn{
+                background-color: $about-btn-color;
+                color: $text-color;
+                text-align: center;
+                border : 0.5rem;
+                border: white;
+                margin-bottom: 0.5rem;
+                padding: 0.5rem 0.5rem;
+            
+            }
+
+            .about__dropbtn:hover .about__dropbtn{
+                    background-color: $about-drophover-color;
+            }
+
+            .about__dropbtn-content{
+                display: none;
+                position: inherit;
+                background-color: $about-drop-color;
+                margin-top: 1rem;
+                padding: 2rem 1rem;
+                border: none;
+                z-index: 1;
+            }
+
+            .about__dropbtn:hover .about__dropbtn-content{
+                display: block;
+            }
+
+        }
     }
 }
 
