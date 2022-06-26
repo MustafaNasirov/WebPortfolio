@@ -11,7 +11,7 @@ html{
 
 .page{
     color: $text-color;
-    font-family: $font-robotoC;
+    font-family: $font-roboto;
     .container{
         display: flex;
         flex-direction: column;
@@ -31,7 +31,12 @@ html{
         .nav__nav-link{
             color: $text-color;
             padding: 0.25rem;
+            font-size: 0.75rem;
             
+        }
+
+        a:link{
+            text-decoration: none;
         }
     }
 }
@@ -48,6 +53,7 @@ html{
 
         .home__title{
             margin-top: 1rem;
+            font-family: $font-robotoC;
         }
         
         .home__description{
@@ -65,6 +71,7 @@ html{
         
         .projects__title{
             margin-bottom: 1rem;
+            font-family: $font-robotoC;
         }
 
         .projects__grid-item{
@@ -84,10 +91,11 @@ html{
         
         .about__title{
             margin-bottom: 1rem;
+            font-family: $font-robotoC;
         }
 
         .about__description{
-          
+            font-size: 0.8rem;
         }
 
     }
@@ -104,6 +112,7 @@ html{
 
             .about__drop-title{
                 margin-bottom: 1rem;
+                font-family: $font-robotoC;
             }
             
             .about__dropbtn{
