@@ -11,7 +11,7 @@ html{
 
 .page{
     color: $text-color;
-    font-family: $font-roboto;
+    font-family: $font-cormorant;
     .container{
         display: flex;
         flex-direction: column;
@@ -57,11 +57,11 @@ html{
 
             .home__title{
                 margin-top: 1rem;
-                font-family: $font-robotoC;
             }
             
             .home__description{
                 padding: 1.5rem 0rem;
+                font-family: $font-inter;
             }
         }
     }
@@ -75,7 +75,7 @@ html{
             
             .projects__title{
                 margin-bottom: 1rem;
-                font-family: $font-robotoC;
+
             }
 
             .projects__grid-item{
@@ -95,11 +95,12 @@ html{
             
             .about__title{
                 margin-bottom: 1rem;
-                font-family: $font-robotoC;
+
             }
 
             .about__description{
                 font-size: 0.8rem;
+                font-family: $font-inter;
             }
 
         }
@@ -117,7 +118,6 @@ html{
 
                 .about__drop-title{
                     margin-bottom: 1rem;
-                    font-family: $font-robotoC;
                 }
                 
                 .about__dropbtn{
@@ -174,22 +174,37 @@ html{
             margin-top: 2rem;
             padding: 1rem 0.25rem;
             width: 15rem;
+            font-family: $font-inter;
         }
         }
     }
 
-    .footer_bar{
-
-        .footer_icon{
-
-           
+    .footer__bar{
+        padding: 2rem;
+        
+        .footer__icons{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+            
+            a:visited{color: white;}
         }
+
+
     }
 }
 
 
 @media screen and (min-width: 360px){
     page{
-        max-width: 360px;
+        max-width: 10%;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    page{
+        width: 50%;
     }
 }
