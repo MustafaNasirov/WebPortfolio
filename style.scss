@@ -6,7 +6,7 @@
 }
 
 html{
-    background-color: $navbar-color;
+    background-color: $background-color;
 }
 
 .page{
@@ -24,15 +24,14 @@ html{
     text-align: center;
 
     .nav__nav-bar{
-        margin: 0.5rem;
-        padding-left: 0.5rem;
-       
+        padding: 0.5rem;
+        background-color: $navbar-color;
+    
 
         .nav__nav-link{
             color: $text-color;
             padding: 0.25rem;
             font-size: 0.75rem;
-            
         }
 
         a:link{
@@ -41,112 +40,153 @@ html{
     }
 }
 
-.home{
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .home__details{
-        padding: 1rem 1.5rem;
+    .home{
 
-        .home__name{
-            font-size: 1rem;
-            font-style: italic;
-        }
+        .home__details{
+            padding: 1rem 1.5rem;
 
-        .home__title{
-            margin-top: 1rem;
-            font-family: $font-robotoC;
-        }
-        
-        .home__description{
-            padding: 1.5rem 0rem;
-        }
-    }
-}
+            .home__name{
+                font-size: 1rem;
+                font-style: italic;
+            }
 
-.projects{
-
-    .projects__grid{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        .projects__title{
-            margin-bottom: 1rem;
-            font-family: $font-robotoC;
-        }
-
-        .projects__grid-item{
-            background-color: $projects-background-color;
-            margin-bottom: 2rem;
-            padding: 4rem 7rem;
-            
-        }
-        
-    }
-}
-
-.about{
-
-    .about__details{
-        padding: 1rem 1.5rem;
-        
-        .about__title{
-            margin-bottom: 1rem;
-            font-family: $font-robotoC;
-        }
-
-        .about__description{
-            font-size: 0.8rem;
-        }
-
-    }
-        
-    .about__grid{
-        margin: 1rem 0rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-
-        .about__dropsection{
-            padding: 0rem 1rem;
-
-            .about__drop-title{
-                margin-bottom: 1rem;
+            .home__title{
+                margin-top: 1rem;
                 font-family: $font-robotoC;
             }
             
-            .about__dropbtn{
-                background-color: $about-btn-color;
-                color: $text-color;
-                text-align: center;
-                border : 0.5rem;
-                border: white;
-                margin-bottom: 0.5rem;
-                padding: 0.5rem 0.5rem;
+            .home__description{
+                padding: 1.5rem 0rem;
+            }
+        }
+    }
+
+    .projects{
+
+        .projects__grid{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             
+            .projects__title{
+                margin-bottom: 1rem;
+                font-family: $font-robotoC;
             }
 
-            .about__dropbtn:hover .about__dropbtn{
-                    background-color: $about-drophover-color;
+            .projects__grid-item{
+                background-color: $projects-background-color;
+                margin-bottom: 2rem;
+                padding: 3rem 7rem;
+                
+            }
+            
+        }
+    }
+
+    .about{
+
+        .about__details{
+            padding: 1rem 1.5rem;
+            
+            .about__title{
+                margin-bottom: 1rem;
+                font-family: $font-robotoC;
             }
 
-            .about__dropbtn-content{
-                display: none;
-                position: inherit;
-                background-color: $about-drop-color;
-                margin-top: 1rem;
-                padding: 2rem 1rem;
-                border: none;
-                z-index: 1;
-            }
-
-            .about__dropbtn:hover .about__dropbtn-content{
-                display: block;
+            .about__description{
+                font-size: 0.8rem;
             }
 
         }
+            
+        .about__grid{
+            margin: 1rem 0rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+
+            .about__dropsection{
+                padding: 0rem 1rem;
+                margin-bottom: 2rem;
+
+                .about__drop-title{
+                    margin-bottom: 1rem;
+                    font-family: $font-robotoC;
+                }
+                
+                .about__dropbtn{
+                    background-color: $about-btn-color;
+                    color: $text-color;
+                    text-align: center;
+                    border : 0.5rem;
+                    border: white;
+                    margin-bottom: 0.5rem;
+                    padding: 0.5rem 0.5rem;
+                    width: 15rem;
+                
+                }
+
+                .about__dropbtn:hover .about__dropbtn{
+                        background-color: $about-drophover-color;
+                }
+
+                .about__dropbtn-content{
+                    display: none;
+                    position: inherit;
+                    background-color: $about-drop-color;
+                    margin-top: 1rem;
+                    padding: 2rem 1rem;
+                    border: none;
+                    z-index: 1;
+                }
+
+                .about__dropbtn:hover .about__dropbtn-content{
+                    display: block;
+                }
+
+            }
+        }
+    }
+
+
+    .contact{        
+
+       
+
+        .contact__title{
+            font-size: 4rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        
+
+        .contact__btn{
+            background-color: $contact-btn-color;
+            color: $text-color;
+            border-color: $contact-btn-border;
+            margin-bottom: 1.5rem;
+            margin-top: 2rem;
+            padding: 1rem 0.25rem;
+            width: 15rem;
+        }
+        }
+    }
+
+    .footer_bar{
+
+        .footer_icon{
+
+           
+        }
     }
 }
+
 
 @media screen and (min-width: 360px){
     page{
