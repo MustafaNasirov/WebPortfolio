@@ -25,8 +25,8 @@ html {
 }
 .nav .nav__nav-bar .nav__nav-link {
   color: whitesmoke;
-  padding: 0.25rem;
-  font-size: 0.75rem;
+  padding: 4.25rem;
+  font-size: 4rem;
 }
 .nav .nav__nav-bar a:link {
   text-decoration: none;
@@ -63,6 +63,33 @@ html {
   background-color: rgb(52, 31, 16);
   margin-bottom: 2rem;
   padding: 3rem 7rem;
+}
+.container .projects .projects__grid .projects__grid-item .projects__grid-item-image {
+  width: 2px;
+}
+.container .projects .projects__grid .projects__grid-item .projects__grid-item-title {
+  font-size: 3rem;
+  padding-top: 1rem;
+}
+.container .projects .projects__grid .projects__grid-item .projects__grid-item-icons {
+  float: right;
+}
+.container .projects .projects__grid .projects__grid-item .projects__grid-item-icons .projects__grid-item-icon {
+  background-color: rgb(105, 77, 57);
+}
+.container .projects .projects__grid .projects__grid-item .projects__grid-item-skillTags {
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.container .projects .projects__grid .projects__grid-item .projects__grid-item-skillTags .projects__grid-item-skill {
+  background-color: rgb(129, 78, 41);
+  padding: 1rem;
+  display: inline;
+  margin-right: 0.5rem;
+  border-radius: 10%;
+}
+.container .projects .projects__grid .projects__grid-item .projects__grid-item-skillTags .projects__grid-item-icon {
+  display: inline;
 }
 .container .about .about__details {
   padding: 1rem 1.5rem;
