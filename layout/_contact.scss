@@ -1,0 +1,27 @@
+@use "../variables" as *;
+
+.contact{        
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+   
+
+    .contact__title{
+        font-size: 4rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .contact__btn{
+        background-color: $contact-btn-color;
+        color: $text-color;
+        border-color: $contact-btn-border;
+        margin-bottom: 1.5rem;
+        margin-top: 2rem;
+        padding: 1rem 0.25rem;
+        font-family: $font-inter;
+        text-align: center;
+    }
+    
+}

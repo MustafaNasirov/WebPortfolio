@@ -1,0 +1,66 @@
+@use "../variables" as *;
+
+
+    .projects{
+
+        .projects__grid{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            
+            .projects__title{
+                margin-bottom: 1rem;
+
+            }
+
+            .projects__grid-item{
+                background-color: $projects-background-color;
+                margin-bottom: 2rem;
+                padding: 3rem 7rem;
+
+                .projects__grid-item-image{
+                    width: 100%;
+                    object-fit: contain;
+                }
+
+                .projects__grid-item-title{
+                    font-size: 3rem;
+                    padding-top: 1rem;
+                }
+
+                .projects__grid-item-icons{
+                    float: right;
+                    .projects__grid-item-icon{
+                        background-color: $icon-tag-background;
+                    }
+                }
+
+                .projects__grid-item-skillTags{
+                    align-items: center;
+                    margin-top: 1.5rem;
+
+                    .projects__grid-item-skill{
+                        background-color: $skill-tag-background;
+                        padding: 1rem;
+                        display: inline;
+                        margin-right: 0.5rem;
+                        border-radius: 10%;
+                    }
+
+                    .projects__grid-item-icon{
+                        display: inline;
+                    }
+                }
+                
+            }
+            
+        }
+
+        @media screen and (min-width: 768px){
+            .projects__grid{
+                display: grid;
+            }
+        }
+    }

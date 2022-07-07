@@ -1,0 +1,22 @@
+@use "../variables" as *;
+
+.home{
+
+    .home__details{
+        padding: 1rem 1.5rem;
+
+        .home__name{
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+        .home__title{
+            margin-top: 1rem;
+        }
+        
+        .home__description{
+            padding: 1.5rem 0rem;
+            font-family: $font-inter;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@use "../variables" as *;
+
+
+.about{
+        
+    .about__details{
+        display: inline-block;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        
+        .about__title{
+            margin-bottom: 1rem;
+        }
+
+        .about__description{
+            font-size: 0.8rem;
+            font-family: $font-inter;
+        }
+
+    }
+        
+    .about__grid{
+        margin: 1rem 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        .about__dropsection{
+            padding: 0rem 1rem;
+            margin-bottom: 2rem;
+
+            .about__drop-title{
+                margin-bottom: 1rem;
+            }
+            
+            .about__dropbtn{
+                background-color: $about-btn-color;
+                color: $text-color;
+                text-align: center;
+                border : 0.5rem;
+                border: white;
+                margin-bottom: 0.5rem;
+                padding: 0.5rem 0.5rem;
+                width: 15rem;
+            }
+
+            .about__dropbtn:hover .about__dropbtn{
+                    background-color: $about-drophover-color;
+            }
+
+            .about__dropbtn-content{
+                display: none;
+                position: inherit;
+                background-color: $about-drop-color;
+                margin-top: 1rem;
+                padding: 2rem 1rem;
+                border: none;
+                z-index: 1;
+                transition: 1000ms;
+            }
+
+            .about__dropbtn:hover .about__dropbtn-content{
+                display: block;
+                
+            }
+
+        }
+    }
+}

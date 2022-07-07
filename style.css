@@ -1,3 +1,170 @@
+.nav {
+  text-align: center;
+}
+.nav .nav__nav-bar {
+  padding: 0.5rem;
+  background-color: rgb(139, 89, 54);
+}
+.nav .nav__nav-bar .nav__nav-link {
+  color: whitesmoke;
+  padding: 1.25rem;
+  font-size: 3rem;
+}
+.nav .nav__nav-bar a:link {
+  text-decoration: none;
+}
+
+.home .home__details {
+  padding: 1rem 1.5rem;
+}
+.home .home__details .home__name {
+  font-size: 1rem;
+  font-style: italic;
+}
+.home .home__details .home__title {
+  margin-top: 1rem;
+}
+.home .home__details .home__description {
+  padding: 1.5rem 0rem;
+  font-family: "Inter", sans-serif;
+}
+
+.projects .projects__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.projects .projects__grid .projects__title {
+  margin-bottom: 1rem;
+}
+.projects .projects__grid .projects__grid-item {
+  background-color: rgb(52, 31, 16);
+  margin-bottom: 2rem;
+  padding: 3rem 7rem;
+}
+.projects .projects__grid .projects__grid-item .projects__grid-item-image {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.projects .projects__grid .projects__grid-item .projects__grid-item-title {
+  font-size: 3rem;
+  padding-top: 1rem;
+}
+.projects .projects__grid .projects__grid-item .projects__grid-item-icons {
+  float: right;
+}
+.projects .projects__grid .projects__grid-item .projects__grid-item-icons .projects__grid-item-icon {
+  background-color: rgb(105, 77, 57);
+}
+.projects .projects__grid .projects__grid-item .projects__grid-item-skillTags {
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.projects .projects__grid .projects__grid-item .projects__grid-item-skillTags .projects__grid-item-skill {
+  background-color: rgb(129, 78, 41);
+  padding: 1rem;
+  display: inline;
+  margin-right: 0.5rem;
+  border-radius: 10%;
+}
+.projects .projects__grid .projects__grid-item .projects__grid-item-skillTags .projects__grid-item-icon {
+  display: inline;
+}
+@media screen and (min-width: 768px) {
+  .projects .projects__grid {
+    display: grid;
+  }
+}
+
+.about .about__details {
+  display: inline-block;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.about .about__details .about__title {
+  margin-bottom: 1rem;
+}
+.about .about__details .about__description {
+  font-size: 0.8rem;
+  font-family: "Inter", sans-serif;
+}
+.about .about__grid {
+  margin: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .about__grid .about__dropsection {
+  padding: 0rem 1rem;
+  margin-bottom: 2rem;
+}
+.about .about__grid .about__dropsection .about__drop-title {
+  margin-bottom: 1rem;
+}
+.about .about__grid .about__dropsection .about__dropbtn {
+  background-color: rgb(101, 62, 35);
+  color: whitesmoke;
+  text-align: center;
+  border: 0.5rem;
+  border: white;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  width: 15rem;
+}
+.about .about__grid .about__dropsection .about__dropbtn:hover .about__dropbtn {
+  background-color: rgb(179, 155, 138);
+}
+.about .about__grid .about__dropsection .about__dropbtn-content {
+  display: none;
+  position: inherit;
+  background-color: rgb(141, 82, 40);
+  margin-top: 1rem;
+  padding: 2rem 1rem;
+  border: none;
+  z-index: 1;
+  transition: 1000ms;
+}
+.about .about__grid .about__dropsection .about__dropbtn:hover .about__dropbtn-content {
+  display: block;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+.contact .contact__title {
+  font-size: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.contact .contact__btn {
+  background-color: rgba(0, 0, 0, 0);
+  color: whitesmoke;
+  border-color: rgb(255, 209, 176);
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  padding: 1rem 0.25rem;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.footer__bar {
+  padding: 2rem;
+}
+.footer__bar .footer__icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.footer__bar .footer__icons a:visited {
+  color: white;
+}
+
 * {
   margin: 0;
 }
@@ -14,158 +181,6 @@ html {
   display: flex;
   flex-direction: column;
   background-color: rgb(71, 54, 35);
-}
-
-.nav {
-  text-align: center;
-}
-.nav .nav__nav-bar {
-  padding: 0.5rem;
-  background-color: rgb(139, 89, 54);
-}
-.nav .nav__nav-bar .nav__nav-link {
-  color: whitesmoke;
-  padding: 4.25rem;
-  font-size: 4rem;
-}
-.nav .nav__nav-bar a:link {
-  text-decoration: none;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.container .home .home__details {
-  padding: 1rem 1.5rem;
-}
-.container .home .home__details .home__name {
-  font-size: 1rem;
-  font-style: italic;
-}
-.container .home .home__details .home__title {
-  margin-top: 1rem;
-}
-.container .home .home__details .home__description {
-  padding: 1.5rem 0rem;
-  font-family: "Inter", sans-serif;
-}
-.container .projects .projects__grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.container .projects .projects__grid .projects__title {
-  margin-bottom: 1rem;
-}
-.container .projects .projects__grid .projects__grid-item {
-  background-color: rgb(52, 31, 16);
-  margin-bottom: 2rem;
-  padding: 3rem 7rem;
-}
-.container .projects .projects__grid .projects__grid-item .projects__grid-item-image {
-  width: 2px;
-}
-.container .projects .projects__grid .projects__grid-item .projects__grid-item-title {
-  font-size: 3rem;
-  padding-top: 1rem;
-}
-.container .projects .projects__grid .projects__grid-item .projects__grid-item-icons {
-  float: right;
-}
-.container .projects .projects__grid .projects__grid-item .projects__grid-item-icons .projects__grid-item-icon {
-  background-color: rgb(105, 77, 57);
-}
-.container .projects .projects__grid .projects__grid-item .projects__grid-item-skillTags {
-  align-items: center;
-  margin-top: 1.5rem;
-}
-.container .projects .projects__grid .projects__grid-item .projects__grid-item-skillTags .projects__grid-item-skill {
-  background-color: rgb(129, 78, 41);
-  padding: 1rem;
-  display: inline;
-  margin-right: 0.5rem;
-  border-radius: 10%;
-}
-.container .projects .projects__grid .projects__grid-item .projects__grid-item-skillTags .projects__grid-item-icon {
-  display: inline;
-}
-.container .about .about__details {
-  padding: 1rem 1.5rem;
-}
-.container .about .about__details .about__title {
-  margin-bottom: 1rem;
-}
-.container .about .about__details .about__description {
-  font-size: 0.8rem;
-  font-family: "Inter", sans-serif;
-}
-.container .about .about__grid {
-  margin: 1rem 0rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.container .about .about__grid .about__dropsection {
-  padding: 0rem 1rem;
-  margin-bottom: 2rem;
-}
-.container .about .about__grid .about__dropsection .about__drop-title {
-  margin-bottom: 1rem;
-}
-.container .about .about__grid .about__dropsection .about__dropbtn {
-  background-color: rgb(101, 62, 35);
-  color: whitesmoke;
-  text-align: center;
-  border: 0.5rem;
-  border: white;
-  margin-bottom: 0.5rem;
-  padding: 0.5rem 0.5rem;
-  width: 15rem;
-}
-.container .about .about__grid .about__dropsection .about__dropbtn:hover .about__dropbtn {
-  background-color: rgb(179, 155, 138);
-}
-.container .about .about__grid .about__dropsection .about__dropbtn-content {
-  display: none;
-  position: inherit;
-  background-color: rgb(141, 82, 40);
-  margin-top: 1rem;
-  padding: 2rem 1rem;
-  border: none;
-  z-index: 1;
-}
-.container .about .about__grid .about__dropsection .about__dropbtn:hover .about__dropbtn-content {
-  display: block;
-}
-.container .contact .contact__title {
-  font-size: 4rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-.container .contact .contact__title .contact__btn {
-  background-color: rgba(0, 0, 0, 0);
-  color: whitesmoke;
-  border-color: rgb(255, 209, 176);
-  margin-bottom: 1.5rem;
-  margin-top: 2rem;
-  padding: 1rem 0.25rem;
-  width: 15rem;
-  font-family: "Inter", sans-serif;
-}
-.container .footer__bar {
-  padding: 2rem;
-}
-.container .footer__bar .footer__icons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-}
-.container .footer__bar .footer__icons a:visited {
-  color: white;
 }
 
 @media screen and (min-width: 360px) {
