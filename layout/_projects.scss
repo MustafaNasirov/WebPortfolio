@@ -3,31 +3,33 @@
 
     .projects{
 
+
+        .projects__title{
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+
         .projects__grid{
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
             align-items: center;
-            width: 100%;
+           
 
-            
-            .projects__title{
-                margin-bottom: 1rem;
-
-            }
 
             .projects__grid-item{
                 background-color: $projects-background-color;
                 margin-bottom: 2rem;
-                padding: 3rem 7rem;
+                padding: 2rem;
+                width: 100%;
 
                 .projects__grid-item-image{
                     width: 100%;
-                    object-fit: contain;
+                    padding-bottom: 1.5rem;
                 }
 
                 .projects__grid-item-title{
-                    font-size: 3rem;
-                    padding-top: 1rem;
+                    font-size: 2.5rem;
                 }
 
                 .projects__grid-item-icons{
@@ -43,10 +45,11 @@
 
                     .projects__grid-item-skill{
                         background-color: $skill-tag-background;
-                        padding: 1rem;
+                        padding: .5rem;
                         display: inline;
                         margin-right: 0.5rem;
-                        border-radius: 10%;
+                        border-radius: 7%;
+                        font-size: .9rem;
                     }
 
                     .projects__grid-item-icon{
@@ -61,6 +64,9 @@
         @media screen and (min-width: 768px){
             .projects__grid{
                 display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 1rem;
             }
         }
     }

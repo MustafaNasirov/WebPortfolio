@@ -3,18 +3,30 @@
 .nav{
     text-align: center;
 
-    .nav__nav-bar{
-        padding: 0.5rem;
-        background-color: $navbar-color;    
-
-        .nav__nav-link{
-            color: $text-color;
-            padding: 1.25rem;
-            font-size: 3rem;
+    .nav__nav-burger{
+        
+        .nav__nav-burgerBtn{
+            margin: 1rem;
+            padding: 1rem;
+            background-color: $navbar-color;  
+            float: right;
         }
 
-        a:link{
-            text-decoration: none;
-        }
+            .nav__nav-collapsed{
+                margin-top: 2rem;
+                display: none;
+          
+
+                .nav__nav-link{
+                    color: $text-color;
+                    padding: 1rem;
+                    font-size: 1rem;
+                }
+
+                a:link{
+                    text-decoration: none;
+                }
+            }
+        
     }
 }

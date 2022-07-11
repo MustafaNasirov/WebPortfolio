@@ -12,11 +12,14 @@
 <page class="page">
     <nav class="nav">
 
-        <div class="nav__nav-bar">
-            <a href="" class="nav__nav-link">Home</a>
-            <a href="" class="nav__nav-link">About</a>
-            <a href="" class="nav__nav-link">Projects</a>
-            <a href="" class="nav__nav-link">Contact</a>
+        <div class="nav__nav-burger">
+            <button class="nav__nav-burgerBtn" data-toggle="collapse" data-target="#burger-collapsed"></button>
+            <div class="nav__nav-collapsed" id="burger-collapsed">
+                <a href="" class="nav__nav-link">Home</a>
+                <a href="" class="nav__nav-link">About</a>
+                <a href="" class="nav__nav-link">Projects</a>
+                <a href="" class="nav__nav-link">Contact</a>
+            </div>
         </div>
 
     </nav>
@@ -32,41 +35,45 @@
                     <p class="home__description">3rd-year Computer Science Student, passionate about web development, software and design. <br><br> Driven and enthusiastic about learning new things to improve my skills as a computer scientist and developer. I have a passion for film and design, looking to combine both my computing and creative skills to create something beautiful.</p>
                 </div>
 
-                
+     
             </section>
 
             
             <section class="projects">
-                <div class="projects__grid">
                 <h1 class="projects__title">Projects</h1>
+                <div class="projects__grid">
                     
                     <div class="projects__grid-item">
-                        <img src="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg" class="project__grid-item-image" alt="project-1">
-                        <h2 class="projects__grid-item-title">Calculator</h2><span class="projects__grid-item-icons"><i class="fa-brands fa-github"></i></span>
+                        
+                        <h2 class="projects__grid-item-title">Calculator</h2>
                             <div class="projects__grid-item-skillTags">
+                                <img class="projects__grid-item-image" src="images/calculator.png" alt="calculator-project"></img>
                                 <div class="projects__grid-item-skill">JavaScript</div>
                                 <div class="projects__grid-item-skill">HTML</div>
-                                <div class="projects__grid-item-skill">Java</div>
+                                <div class="projects__grid-item-skill">CSS</div>
+                                <span class="projects__grid-item-icons"><i class="fa-brands fa-github"></i></span>
                             </div>
                     </div>
 
                     <div class="projects__grid-item">
-                        <img src="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg" class="project__grid-item-image" alt="project-1">
-                        <h2 class="projects__grid-item-title">2</h2><span class="projects__grid-item-icons"><i class="fa-brands fa-github"></i></span>
+                        
+                        <h2 class="projects__grid-item-title">2</h2>
                             <div class="projects__grid-item-skillTags">
                                 <div class="projects__grid-item-skill">JavaScript</div>
                                 <div class="projects__grid-item-skill">HTML</div>
+                                <span class="projects__grid-item-icons"><i class="fa-brands fa-github"></i></span>
                             </div>
                     </div>
 
                     <div class="projects__grid-item">
-                        <img src="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg" class="project__grid-item-image" alt="project-1">
-                        <h2 class="projects__grid-item-title">3</h2><span class="projects__grid-item-icons"><i class="fa-brands fa-github"></i></span>
+                        
+                        <h2 class="projects__grid-item-title">3</h2>
                             <div class="projects__grid-item-skillTags">
                                 <div class="projects__grid-item-skill">JavaScript</div>
+                                <span class="projects__grid-item-icons"><i class="fa-brands fa-github"></i></span>
                             </div>
                     </div>
-                    
+
                 </div>
             </section>
 
@@ -130,6 +137,7 @@
             <div class="contact">
                 <div class="contact__title">Get in Touch.</div>
                 <button class="contact__btn">Contact</button>
+                <div class="contact__email">mustafanasirov@gmail.com</div>
                 
             </div>
 

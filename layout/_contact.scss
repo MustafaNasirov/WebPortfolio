@@ -1,15 +1,16 @@
 @use "../variables" as *;
 
 .contact{        
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    
 
     .contact__title{
-        font-size: 4rem;
+        font-size: 3.85rem;
         margin-top: 2rem;
         margin-bottom: 1rem;
+        padding-left: 0.25rem;
         text-align: center;
     }
 
@@ -21,7 +22,14 @@
         margin-top: 2rem;
         padding: 1rem 0.25rem;
         font-family: $font-inter;
+        font-size: large;
         text-align: center;
+        width: 10rem;
+    }
+
+    .contact__email{
+        font-family: $font-inter;
+        padding-top: 1rem;
     }
     
 }

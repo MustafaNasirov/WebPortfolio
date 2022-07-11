@@ -3,6 +3,7 @@
 
 .about{
         
+    
     .about__details{
         display: inline-block;
         align-items: center;
@@ -24,10 +25,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
         
 
         .about__dropsection{
-            padding: 0rem 1rem;
             margin-bottom: 2rem;
 
             .about__drop-title{
