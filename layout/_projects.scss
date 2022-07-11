@@ -5,8 +5,10 @@
 
 
         .projects__title{
-            margin-bottom: 1rem;
+            margin-bottom: .5rem;
             padding-left: 1.5rem;
+            font-size: 3rem;
+            font-weight: 400;
         }
 
         .projects__grid{
@@ -20,7 +22,7 @@
             .projects__grid-item{
                 background-color: $projects-background-color;
                 margin-bottom: 2rem;
-                padding: 2rem;
+                padding: 1rem 2rem;
                 width: 100%;
 
                 .projects__grid-item-image{
@@ -29,7 +31,8 @@
                 }
 
                 .projects__grid-item-title{
-                    font-size: 2.5rem;
+                    font-size: 2rem;
+                    font-weight: 200;
                 }
 
                 .projects__grid-item-icons{

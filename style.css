@@ -4,7 +4,7 @@
 .nav .nav__nav-burger .nav__nav-burgerBtn {
   margin: 1rem;
   padding: 1rem;
-  background-color: rgb(139, 89, 54);
+  background-color: rgb(100, 86, 75);
   float: right;
 }
 .nav .nav__nav-burger .nav__nav-collapsed {
@@ -18,6 +18,15 @@
 }
 .nav .nav__nav-burger .nav__nav-collapsed a:link {
   text-decoration: none;
+}
+.nav .nav__nav-burger #burger-collapsed .nav__nav-link {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-top: 1px solid #333;
+}
+.nav .nav__nav-burger #burger-collapsed:hover {
+  display: block;
 }
 
 .home .home__details {
@@ -37,8 +46,10 @@
 }
 
 .projects .projects__title {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   padding-left: 1.5rem;
+  font-size: 3rem;
+  font-weight: 400;
 }
 .projects .projects__grid {
   display: grid;
@@ -47,9 +58,9 @@
   align-items: center;
 }
 .projects .projects__grid .projects__grid-item {
-  background-color: rgb(52, 31, 16);
+  background-color: rgb(40, 39, 37);
   margin-bottom: 2rem;
-  padding: 2rem;
+  padding: 1rem 2rem;
   width: 100%;
 }
 .projects .projects__grid .projects__grid-item .projects__grid-item-image {
@@ -57,7 +68,8 @@
   padding-bottom: 1.5rem;
 }
 .projects .projects__grid .projects__grid-item .projects__grid-item-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: 200;
 }
 .projects .projects__grid .projects__grid-item .projects__grid-item-icons {
   float: right;
@@ -70,7 +82,7 @@
   margin-top: 1.5rem;
 }
 .projects .projects__grid .projects__grid-item .projects__grid-item-skillTags .projects__grid-item-skill {
-  background-color: rgb(129, 78, 41);
+  background-color: rgb(60, 51, 42);
   padding: 0.5rem;
   display: inline;
   margin-right: 0.5rem;
@@ -114,7 +126,7 @@
   margin-bottom: 1rem;
 }
 .about .about__grid .about__dropsection .about__dropbtn {
-  background-color: rgb(101, 62, 35);
+  background-color: rgb(80, 64, 53);
   color: whitesmoke;
   text-align: center;
   border: 0.5rem;
@@ -129,7 +141,7 @@
 .about .about__grid .about__dropsection .about__dropbtn-content {
   display: none;
   position: inherit;
-  background-color: rgb(141, 82, 40);
+  background-color: rgb(31, 28, 26);
   margin-top: 1rem;
   padding: 2rem 1rem;
   border: none;
@@ -187,7 +199,7 @@
 }
 
 html {
-  background-color: rgb(71, 54, 35);
+  background-color: rgb(44, 42, 40);
 }
 
 .page {
@@ -197,7 +209,7 @@ html {
 .page .container {
   display: flex;
   flex-direction: column;
-  background-color: rgb(71, 54, 35);
+  background-color: rgb(44, 42, 40);
 }
 
 @media screen and (min-width: 360px) {
