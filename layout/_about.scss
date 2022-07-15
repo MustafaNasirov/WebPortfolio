@@ -2,7 +2,9 @@
 
 
 .about{
-        
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
     
     .about__details{
         display: inline-block;
@@ -17,16 +19,22 @@
             font-size: 0.8rem;
             font-family: $font-inter;
         }
-
     }
+
+    .about__image{
+        border: solid 0.35rem rgb(90, 79, 72);
+        width: 50%;
+        align-self: center;
+        margin: .5rem;
+    }    
         
     .about__grid{
         margin: 1rem 0rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        
+        justify-content: center;
+        width: 100%;        
 
         .about__dropsection{
             margin-bottom: 2rem;

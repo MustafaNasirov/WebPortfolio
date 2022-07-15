@@ -10,7 +10,8 @@
 
 
 *{
- margin: 0;   
+ margin: 0; 
+ padding: 0;  
 }
 
 html{
@@ -25,8 +26,11 @@ html{
         display: flex;
         flex-direction: column;
         background-color: $background-color;
-
-        
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        padding-left: 6%;
+        padding-right: 6%;
     }
 }
 

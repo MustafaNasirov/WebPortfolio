@@ -1,15 +1,16 @@
 @use "../variables" as *;
 
 .nav{
+    align-self: flex-end;
     text-align: center;
 
     .nav__nav-burger{
         
         .nav__nav-burgerBtn{
-            margin: 1rem;
+            margin-top: 1rem;
             padding: 1rem;
             background-color: $navbar-color;  
-            float: right;
+            
         }
 
             .nav__nav-collapsed{

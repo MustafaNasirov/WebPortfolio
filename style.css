@@ -1,11 +1,11 @@
 .nav {
+  align-self: flex-end;
   text-align: center;
 }
 .nav .nav__nav-burger .nav__nav-burgerBtn {
-  margin: 1rem;
+  margin-top: 1rem;
   padding: 1rem;
   background-color: rgb(100, 86, 75);
-  float: right;
 }
 .nav .nav__nav-burger .nav__nav-collapsed {
   margin-top: 2rem;
@@ -45,27 +45,32 @@
   font-family: "Inter", sans-serif;
 }
 
+.projects {
+  width: 100%;
+  background-color: rgb(40, 39, 37);
+  padding: 0.5rem 0.25rem;
+  border-radius: 25px;
+}
 .projects .projects__title {
-  margin-bottom: 0.5rem;
   padding-left: 1.5rem;
   font-size: 3rem;
   font-weight: 400;
 }
 .projects .projects__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 .projects .projects__grid .projects__grid-item {
-  background-color: rgb(40, 39, 37);
-  margin-bottom: 2rem;
   padding: 1rem 2rem;
-  width: 100%;
+  width: 80%;
 }
 .projects .projects__grid .projects__grid-item .projects__grid-item-image {
   width: 100%;
-  padding-bottom: 1.5rem;
+  border-radius: 12.5px;
+  border: solid 0.25rem white;
+  margin-bottom: 1rem;
 }
 .projects .projects__grid .projects__grid-item .projects__grid-item-title {
   font-size: 2rem;
@@ -84,10 +89,11 @@
 .projects .projects__grid .projects__grid-item .projects__grid-item-skillTags .projects__grid-item-skill {
   background-color: rgb(60, 51, 42);
   padding: 0.5rem;
-  display: inline;
-  margin-right: 0.5rem;
+  display: inline-block;
   border-radius: 7%;
   font-size: 0.9rem;
+  margin-top: 0.4rem;
+  margin-right: 0.2rem;
 }
 .projects .projects__grid .projects__grid-item .projects__grid-item-skillTags .projects__grid-item-icon {
   display: inline;
@@ -97,10 +103,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 1rem;
+  }
+  .projects .projects__grid .projects__grid-item {
+    width: auto;
   }
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .about .about__details {
   display: inline-block;
   align-items: center;
@@ -113,11 +126,19 @@
   font-size: 0.8rem;
   font-family: "Inter", sans-serif;
 }
+.about .about__image {
+  border: solid 0.35rem rgb(90, 79, 72);
+  width: 50%;
+  align-self: center;
+  margin: 0.5rem;
+}
 .about .about__grid {
   margin: 1rem 0rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 .about .about__grid .about__dropsection {
   margin-bottom: 2rem;
@@ -176,12 +197,16 @@
   text-align: center;
   width: 10rem;
 }
+.contact .contact__btn:hover {
+  background-color: rgb(95, 87, 73);
+}
 .contact .contact__email {
   font-family: "Inter", sans-serif;
   padding-top: 1rem;
 }
 
 .footer__bar {
+  align-items: center;
   padding: 2rem;
 }
 .footer__bar .footer__icons {
@@ -196,6 +221,7 @@
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -210,6 +236,11 @@ html {
   display: flex;
   flex-direction: column;
   background-color: rgb(44, 42, 40);
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 @media screen and (min-width: 360px) {

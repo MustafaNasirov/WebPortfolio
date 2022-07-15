@@ -2,32 +2,32 @@
 
 
     .projects{
-
+        width: 100%;
+        background-color: $projects-background-color;
+        padding: 0.5rem 0.25rem;
+        border-radius: 25px;
 
         .projects__title{
-            margin-bottom: .5rem;
             padding-left: 1.5rem;
             font-size: 3rem;
             font-weight: 400;
         }
 
         .projects__grid{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-            align-items: center;
-           
-
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
 
             .projects__grid-item{
-                background-color: $projects-background-color;
-                margin-bottom: 2rem;
                 padding: 1rem 2rem;
-                width: 100%;
+                width: 80%;
 
                 .projects__grid-item-image{
                     width: 100%;
-                    padding-bottom: 1.5rem;
+                    border-radius: 12.5px;
+                    border: solid 0.25rem white;
+                    margin-bottom: 1rem;
                 }
 
                 .projects__grid-item-title{
@@ -49,10 +49,11 @@
                     .projects__grid-item-skill{
                         background-color: $skill-tag-background;
                         padding: .5rem;
-                        display: inline;
-                        margin-right: 0.5rem;
+                        display: inline-block;
                         border-radius: 7%;
                         font-size: .9rem;
+                        margin-top: 0.4rem;
+                        margin-right: 0.2rem;
                     }
 
                     .projects__grid-item-icon{
@@ -69,7 +70,14 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 1fr 1fr;
-                gap: 1rem;
+                
+                .projects__grid-item{
+                    width: auto;
+                }
+
+                .projects__grid-item-skillTags{
+                    
+                }
             }
         }
     }
