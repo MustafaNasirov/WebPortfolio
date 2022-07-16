@@ -122,7 +122,7 @@
   .projects .projects__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
   .projects .projects__grid .projects__grid-item {
     width: auto;
