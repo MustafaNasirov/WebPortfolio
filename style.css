@@ -3,9 +3,11 @@
   text-align: center;
 }
 .nav .nav__nav-burger .nav__nav-burgerBtn {
-  margin-top: 1rem;
-  padding: 1rem;
-  background-color: rgb(100, 86, 75);
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  background-color: rgb(65, 56, 49);
+  color: white;
+  font-size: 1.25rem;
 }
 .nav .nav__nav-burger .nav__nav-collapsed {
   margin-top: 2rem;
@@ -33,7 +35,14 @@
   padding: 1rem 1.5rem;
 }
 .home .home__details .home__name {
-  font-size: 1.75rem;
+  font-size: 2rem;
+  color: rgb(212, 187, 121);
+  font-weight: 200;
+}
+.home .home__details #seperator {
+  margin-top: 5%;
+  width: 20%;
+  background-color: rgb(72, 70, 66);
 }
 .home .home__details .home__title {
   margin-top: 1rem;
@@ -53,8 +62,15 @@
 }
 .projects .projects__title {
   padding-left: 1.5rem;
+  padding-top: 1rem;
   font-size: 3rem;
   font-weight: 400;
+}
+.projects #seperator {
+  width: 20%;
+  background-color: rgb(72, 70, 66);
+  margin-left: 6%;
+  margin-top: 3%;
 }
 .projects .projects__grid {
   display: flex;
@@ -68,12 +84,15 @@
 }
 .projects .projects__grid .projects__grid-item .projects__grid-item-image {
   width: 100%;
+  height: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 12.5px;
   border: solid 0.25rem white;
   margin-bottom: 1rem;
 }
 .projects .projects__grid .projects__grid-item .projects__grid-item-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 200;
 }
 .projects .projects__grid .projects__grid-item .projects__grid-item-icons {
@@ -96,7 +115,8 @@
   margin-right: 0.2rem;
 }
 .projects .projects__grid .projects__grid-item .projects__grid-item-skillTags .projects__grid-item-icon {
-  display: inline;
+  display: inline-block;
+  padding: 0.5rem;
 }
 @media screen and (min-width: 768px) {
   .projects .projects__grid {
@@ -188,7 +208,7 @@
 .contact .contact__btn {
   background-color: rgb(39, 36, 31);
   color: whitesmoke;
-  border-color: rgb(255, 209, 176);
+  border: solid rgb(255, 209, 176);
   margin-bottom: 1.5rem;
   margin-top: 2rem;
   padding: 1rem 0.25rem;
@@ -196,6 +216,7 @@
   font-size: large;
   text-align: center;
   width: 10rem;
+  text-decoration: none;
 }
 .contact .contact__btn:hover {
   background-color: rgb(95, 87, 73);

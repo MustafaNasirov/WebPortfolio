@@ -9,8 +9,16 @@
 
         .projects__title{
             padding-left: 1.5rem;
+            padding-top: 1rem;
             font-size: 3rem;
             font-weight: 400;
+        }
+
+        #seperator{
+            width: 20%;
+            background-color: $seperator;
+            margin-left: 6%;
+            margin-top: 3%;
         }
 
         .projects__grid{
@@ -25,13 +33,15 @@
 
                 .projects__grid-item-image{
                     width: 100%;
+                    height: 60%;
+                    object-fit: cover ;
                     border-radius: 12.5px;
                     border: solid 0.25rem white;
                     margin-bottom: 1rem;
                 }
 
                 .projects__grid-item-title{
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                     font-weight: 200;
                 }
 
@@ -57,7 +67,8 @@
                     }
 
                     .projects__grid-item-icon{
-                        display: inline;
+                        display: inline-block;
+                        padding: .5rem;
                     }
                 }
                 
@@ -73,6 +84,10 @@
                 
                 .projects__grid-item{
                     width: auto;
+
+                    .projects__grid-item-image{
+
+                    }
                 }
 
                 .projects__grid-item-skillTags{
@@ -81,3 +96,4 @@
             }
         }
     }
+

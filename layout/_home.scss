@@ -6,7 +6,16 @@
         padding: 1rem 1.5rem;
 
         .home__name{
-            font-size: 1.75rem;
+            font-size: 2rem;
+            color: $home-name-color;
+            font-weight: 200;
+        }
+
+        #seperator{
+            margin-top: 5%;
+            width: 20%;
+            background-color: $seperator;
+            
         }
 
         .home__title{
