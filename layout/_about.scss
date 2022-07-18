@@ -4,7 +4,13 @@
 .about{
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;   
+    
+    #seperator{
+        width: 20%;
+        background-color: $seperator;
+        margin-bottom: 3%;
+    }
     
     .about__details{
         display: inline-block;
@@ -23,7 +29,7 @@
 
     .about__image{
         border: solid 0.35rem rgb(90, 79, 72);
-        width: 50%;
+        width: 35%;
         align-self: center;
         margin: .5rem;
     }    
