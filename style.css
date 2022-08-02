@@ -1,49 +1,57 @@
 .nav {
-  align-self: flex-end;
-  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  padding: 1rem 2rem;
 }
-.nav .nav__nav-burger .nav__nav-burgerBtn {
-  margin-top: 1.5rem;
-  padding: 0.8rem;
-  background-color: rgb(65, 56, 49);
-  color: white;
-  font-size: 1.25rem;
-}
-.nav .nav__nav-burger .nav__nav-collapsed {
-  margin-top: 2rem;
-  display: none;
-}
-.nav .nav__nav-burger .nav__nav-collapsed .nav__nav-link {
-  color: whitesmoke;
-  padding: 1rem;
-  font-size: 1rem;
-}
-.nav .nav__nav-burger .nav__nav-collapsed a:link {
-  text-decoration: none;
-}
-.nav .nav__nav-burger #burger-collapsed .nav__nav-link {
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-  border-top: 1px solid #333;
-}
-.nav .nav__nav-burger #burger-collapsed:hover {
-  display: block;
-}
-
-.home .home__details {
-  padding: 1rem 1.5rem;
-}
-.home .home__details .home__name {
+.nav .nav__name {
   font-size: 2rem;
   color: white;
   font-weight: 200;
+  display: inline-block;
 }
-.home .home__details .home__name .home__name-alt {
+.nav .nav__name .nav__name-alt {
+  display: inline-block;
   color: rgb(212, 187, 121);
 }
+.nav .nav__nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  right: 1px;
+}
+.nav .nav__nav-links .nav__nav-link {
+  color: whitesmoke;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.nav .nav__nav-links a:link {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    gap: 5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav {
+    gap: 19rem;
+  }
+}
+@media screen and (min-width: 1444px) {
+  .nav {
+    gap: 40rem;
+  }
+}
+.home .home__details {
+  padding: 1rem 1.5rem;
+}
 .home .home__details #seperator {
-  margin-top: 5%;
   width: 20%;
   background-color: rgb(72, 70, 66);
 }
@@ -74,11 +82,10 @@
   margin: 3% 0%;
 }
 .projects .projects__grid {
-  /* display: flex;
-  flex-direction: column; */
-  /* display: grid;
-  grid-template-columns: 1fr; */
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-items: center;
   align-items: center;
   width: 100%;
 }
@@ -102,7 +109,6 @@
 .projects .projects__grid .projects__grid-item .projects__grid-item-skillTags {
   display: flex;
   flex-direction: column column column;
-  /* display: grid; */
   grid-template-rows: row row;
   grid-template-columns: column column column;
   align-items: center;
@@ -268,6 +274,7 @@
 
 html {
   background-color: rgb(44, 42, 40);
+  scroll-behavior: smooth;
 }
 
 .page {

@@ -20,11 +20,10 @@
         }
 
         .projects__grid{
-            /* display: flex;
-            flex-direction: column; */
-            /* display: grid;
-            grid-template-columns: 1fr; */
-            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            justify-items: center;
             align-items: center;
             width: 100%;
 
@@ -49,7 +48,6 @@
                 .projects__grid-item-skillTags{
                     display: flex;
                     flex-direction: column column column;
-                    /* display: grid; */
                     grid-template-rows: row row;
                     grid-template-columns: column column column;
                     align-items: center;
@@ -84,9 +82,6 @@
                 }
             }
         }
-
-        
-
     }
 
     @media screen and (min-width: 768px){

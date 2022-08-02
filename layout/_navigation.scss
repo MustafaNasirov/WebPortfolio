@@ -1,43 +1,60 @@
 @use "../variables" as *;
 
 .nav{
-    align-self: flex-end;
-    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap:nowrap;
+    padding: 1rem 2rem;
 
-    .nav__nav-burger{
+    .nav__name{
+        font-size: 2rem;
+        color: white;
+        font-weight: 200;
+        display: inline-block;
+    
+        .nav__name-alt{
+            display: inline-block;
+            color: $home-name-color;
+        }
+    }
+
+    .nav__nav-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        right: 1px;
         
-        .nav__nav-burgerBtn{
-            margin-top: 1.5rem;
-            padding: .8rem;
-            background-color: $navbar-color;  
-            color: white;
-            font-size: 1.25rem;           
-            
+
+        .nav__nav-link{
+            color: $text-color;
+            padding: .5rem;
+            font-size: 1rem;
         }
 
-            .nav__nav-collapsed{
-                margin-top: 2rem;
-                display: none;
-          
+        a:link{
+            text-decoration: none;
+        }
+    }
+}
 
-                .nav__nav-link{
-                    color: $text-color;
-                    padding: 1rem;
-                    font-size: 1rem;
-                }
+@media screen and (min-width: 768px){
+    .nav{
+        gap: 5rem;
+    }
+}
 
-                a:link{
-                    text-decoration: none;
-                }
-            }
+@media screen and (min-width: 1024px){
+    .nav{
+        gap: 19rem;
+    }
+}
 
-            #burger-collapsed .nav__nav-link{
-                box-sizing: border-box; display: block;
-                width: 100%; border-top: 1px solid #333;
-            }
-            #burger-collapsed:hover{
-                display: block;
-            }
-            
+@media screen and (min-width: 1444px){
+    .nav{
+        gap:40rem;
     }
 }

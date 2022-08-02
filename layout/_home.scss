@@ -5,18 +5,7 @@
     .home__details{
         padding: 1rem 1.5rem;
 
-        .home__name{
-            font-size: 2rem;
-            color: white;
-            font-weight: 200;
-
-            .home__name-alt{
-                color: $home-name-color;
-            }
-        }
-
         #seperator{
-            margin-top: 5%;
             width: 20%;
             background-color: $seperator;
             
