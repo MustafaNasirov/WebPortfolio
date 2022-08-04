@@ -40,7 +40,7 @@
                 }
 
                 .projects__grid-item-title{
-                    font-size: 1.8rem;
+                    font-size: 2rem;
                     font-weight: 200;
                     padding-left: 8%;
                 }
@@ -54,6 +54,8 @@
                     padding-left: 8%;
                     padding-top: 2%;
                     margin-bottom: 5%;
+                    flex-wrap: wrap;
+                    gap: .2rem;
 
                     .projects__grid-item-skill{
                         background-color: $skill-tag-background;
@@ -66,17 +68,15 @@
                     }
 
                     .projects__grid-item-icons{
-                        display: inline-block;
+                        display: flex;
                         padding-top: 2.5%;
-                        padding-left: 1%;
+                        gap: .3rem;
                         justify-content: center;
                         
     
                         .projects__grid-item-icon{
                             color: $icon-tag-color;
                             margin-left: 2.5px;                            
-                            padding-left: .5rem;
-                            padding-bottom: .25rem;
                         }
                     }
                 }
@@ -93,12 +93,13 @@
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
                     grid-template-rows: 1fr;
+                    width:100%;
                     
                     .projects__grid-item{
-                        width: auto;
+                        width: 100%;
 
                         .projects__grid-item-image{
-                            
+                            width: 85%;
                         }
 
                         .projects__grid-item-skillTags{
@@ -108,4 +109,3 @@
                 }
             }
         }
-
