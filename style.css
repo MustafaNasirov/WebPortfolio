@@ -91,13 +91,17 @@
 }
 .projects .projects__grid .projects__grid-item {
   width: 100%;
+  border-radius: 1rem;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: all 0.25s ease-in-out;
 }
 .projects .projects__grid .projects__grid-item .projects__grid-item-image {
   width: 80%;
   height: 60%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 12.5px;
+  border-radius: 0.781rem;
   border: solid 0.25rem white;
   margin: 2% 8% 0%;
 }
@@ -105,6 +109,7 @@
   font-size: 2rem;
   font-weight: 200;
   padding-left: 8%;
+  margin-top: 5%;
 }
 .projects .projects__grid .projects__grid-item .projects__grid-item-skillTags {
   display: flex;
@@ -136,6 +141,12 @@
 .projects .projects__grid .projects__grid-item .projects__grid-item-skillTags .projects__grid-item-icons .projects__grid-item-icon {
   color: white;
   margin-left: 2.5px;
+}
+.projects .projects__grid .projects__grid-item:hover {
+  transform: scale(1.075);
+  box-shadow: 0 0 0.25rem rgb(74, 71, 66);
+  background-color: rgb(74, 71, 66);
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -200,29 +211,92 @@
 }
 .about .about__grid .about__dropsection .about__dropbtn {
   background-color: rgb(80, 64, 53);
+  display: block;
   color: whitesmoke;
   text-align: center;
   border: 0.5rem;
   border: white;
   margin-bottom: 0.5rem;
   padding: 0.5rem 0.5rem;
-  width: 15rem;
+  width: 100%;
+  cursor: pointer;
 }
-.about .about__grid .about__dropsection .about__dropbtn:hover .about__dropbtn {
-  background-color: rgb(179, 155, 138);
+.about .about__grid .about__dropsection .about__item {
+  width: 100%;
 }
-.about .about__grid .about__dropsection .about__dropbtn-content {
-  display: none;
-  position: inherit;
-  background-color: rgb(31, 28, 26);
-  margin-top: 1rem;
-  padding: 2rem 1rem;
-  border: none;
-  z-index: 1;
-  transition: 1000ms;
-}
-.about .about__grid .about__dropsection .about__dropbtn:hover .about__dropbtn-content {
+.about .about__grid .about__dropsection .about__item-span {
+  padding: 2rem;
+  background: rgb(80, 64, 53);
+  color: white;
+  font-size: 1.2em;
+  font-variant: small-caps;
+  cursor: pointer;
   display: block;
+}
+.about .about__grid .about__dropsection .about__item-span:after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+.about .about__grid .about__dropsection .about__item-expanded {
+  clear: both;
+  width: 80vw;
+  height: 0;
+  overflow: hidden;
+  text-align: center;
+  transition: height 0.4s ease;
+  background-color: rgb(31, 28, 26);
+}
+.about .about__grid .about__dropsection .about__item-expanded li {
+  padding: 2rem;
+}
+.about .about__grid .about__dropsection #about__item-check1 {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+.about .about__grid .about__dropsection #about__item-check1:checked + .about__item-expanded {
+  height: 6rem;
+}
+.about .about__grid .about__dropsection #about__item-check2 {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+.about .about__grid .about__dropsection #about__item-check2:checked + .about__item-expanded {
+  height: 6rem;
+}
+.about .about__grid .about__dropsection #about__item-check3 {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+.about .about__grid .about__dropsection #about__item-check3:checked + .about__item-expanded {
+  height: 6rem;
+}
+.about .about__grid .about__dropsection #about__item-check4 {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+.about .about__grid .about__dropsection #about__item-check4:checked + .about__item-expanded {
+  height: 8rem;
+}
+.about .about__grid .about__dropsection #about__item-check5 {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+.about .about__grid .about__dropsection #about__item-check5:checked + .about__item-expanded {
+  height: 8rem;
+}
+.about .about__grid .about__dropsection #about__item-check6 {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+.about .about__grid .about__dropsection #about__item-check6:checked + .about__item-expanded {
+  height: 6rem;
 }
 
 .contact {

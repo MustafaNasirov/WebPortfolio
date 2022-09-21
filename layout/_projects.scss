@@ -29,12 +29,16 @@
 
             .projects__grid-item{
                 width: 100%;
+                border-radius: 1rem;
+                margin: 0 -.25rem;
+                padding: 0 .25rem;
+                transition: all .25s ease-in-out;
 
                 .projects__grid-item-image{
                     width: 80%;
                     height: 60%;
                     object-fit: cover ;
-                    border-radius: 12.5px;
+                    border-radius: 0.781rem;
                     border: solid 0.25rem white;
                     margin: 2% 8% 0%;
                 }
@@ -43,6 +47,7 @@
                     font-size: 2rem;
                     font-weight: 200;
                     padding-left: 8%;
+                    margin-top: 5%;
                 }
 
                 .projects__grid-item-skillTags{
@@ -73,13 +78,18 @@
                         gap: .3rem;
                         justify-content: center;
                         
-    
                         .projects__grid-item-icon{
                             color: $icon-tag-color;
                             margin-left: 2.5px;                            
                         }
                     }
                 }
+            }
+            .projects__grid-item:hover{
+                transform: scale(1.075);
+                box-shadow: 0 0 .25rem $projects-item-hover;
+                background-color: $projects-item-hover;
+                color: white;
             }
         }
     }

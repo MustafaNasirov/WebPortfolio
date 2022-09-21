@@ -52,34 +52,67 @@
             
             .about__dropbtn{
                 background-color: $about-btn-color;
+                display: block;
                 color: $text-color;
                 text-align: center;
                 border : 0.5rem;
                 border: white;
                 margin-bottom: 0.5rem;
                 padding: 0.5rem 0.5rem;
-                width: 15rem;
+                width: 100%;
+                cursor: pointer;
             }
 
-            .about__dropbtn:hover .about__dropbtn{
-                    background-color: $about-drophover-color;
+            .about__item{
+                width: 100%;
             }
 
-            .about__dropbtn-content{
-                display: none;
-                position: inherit;
-                background-color: $about-drop-color;
-                margin-top: 1rem;
-                padding: 2rem 1rem;
-                border: none;
-                z-index: 1;
-                transition: 1000ms;
-            }
-
-            .about__dropbtn:hover .about__dropbtn-content{
+            .about__item-span {
+                padding : 2rem;
+                background : $about-btn-color;
+                color : white;
+                font-size : 1.2em;
+                font-variant : small-caps;
+                cursor : pointer;
                 display: block;
-                
-            }
+              }
+
+            .about__item-span:after {
+                float: right;
+                right: 10%;
+                content: "+";
+              }
+
+            .about__item-expanded {
+                clear:both;
+                width: 80vw;
+                height:0;
+                overflow: hidden;
+                text-align: center;
+                transition: height .4s ease;
+                background-color: $about-drop-color;
+
+              }
+            
+            .about__item-expanded li {padding : 2rem;}
+
+              #about__item-check1 {position: absolute; opacity: 0; height: 0px;}    
+              #about__item-check1:checked + .about__item-expanded {height: 6rem}
+
+              #about__item-check2 {position: absolute; opacity: 0; height: 0px;}    
+              #about__item-check2:checked + .about__item-expanded {height: 6rem}
+
+              #about__item-check3 {position: absolute; opacity: 0; height: 0px;}    
+              #about__item-check3:checked + .about__item-expanded {height: 6rem}
+
+              #about__item-check4 {position: absolute; opacity: 0; height: 0px;}    
+              #about__item-check4:checked + .about__item-expanded {height: 8rem}
+
+              #about__item-check5 {position: absolute; opacity: 0; height: 0px;}    
+              #about__item-check5:checked + .about__item-expanded {height: 8rem}
+
+              #about__item-check6 {position: absolute; opacity: 0; height: 0px;}    
+              #about__item-check6:checked + .about__item-expanded {height: 6rem}
 
         }
     }
