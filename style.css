@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column column;
   justify-content: space-between;
-  gap: 1.5rem;
+  width: 100%;
   flex-wrap: nowrap;
   padding: 1rem 2rem;
 }
@@ -33,21 +33,6 @@
   text-decoration: none;
 }
 
-@media screen and (min-width: 768px) {
-  .nav {
-    gap: 5rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .nav {
-    gap: 19rem;
-  }
-}
-@media screen and (min-width: 1444px) {
-  .nav {
-    gap: 40rem;
-  }
-}
 .home .home__details {
   padding: 1rem 1.5rem;
 }
