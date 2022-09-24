@@ -33,7 +33,7 @@
   position: relative;
   color: whitesmoke;
   padding: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   display: inline-block;
 }
 .nav .nav__nav-links .nav__nav-link:after {
@@ -347,7 +347,7 @@
 }
 .footer__bar .footer__icons a:hover {
   transform: scale(1.2);
-  transition: ease-in 0.3s;
+  transition: ease-in-out 0.1s;
 }
 
 * {
