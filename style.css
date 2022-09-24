@@ -25,9 +25,28 @@
   right: 1px;
 }
 .nav .nav__nav-links .nav__nav-link {
+  display: inline-block;
+  position: relative;
   color: whitesmoke;
   padding: 0.5rem;
   font-size: 1rem;
+  display: inline-block;
+}
+.nav .nav__nav-links .nav__nav-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav .nav__nav-links .nav__nav-link:hover:after {
+  width: 100%;
+  left: 0;
 }
 .nav .nav__nav-links a:link {
   text-decoration: none;
@@ -194,20 +213,11 @@
 .about .about__grid .about__dropsection .about__drop-title {
   margin-bottom: 1rem;
 }
-.about .about__grid .about__dropsection .about__dropbtn {
-  background-color: rgb(80, 64, 53);
-  display: block;
-  color: whitesmoke;
-  text-align: center;
-  border: 0.5rem;
-  border: white;
-  margin-bottom: 0.5rem;
-  padding: 0.5rem 0.5rem;
-  width: 100%;
-  cursor: pointer;
-}
 .about .about__grid .about__dropsection .about__item {
   width: 100%;
+}
+.about .about__grid .about__dropsection .about__item:hover .about__item-span {
+  background-color: rgb(105, 92, 83);
 }
 .about .about__grid .about__dropsection .about__item-span {
   padding: 2rem;
@@ -330,6 +340,9 @@
 }
 .footer__bar .footer__icons a:visited {
   color: white;
+}
+.footer__bar .footer__icons a:hover {
+  transform: scale(1.2);
 }
 
 * {

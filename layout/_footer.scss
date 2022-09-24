@@ -12,6 +12,10 @@
         gap: 1rem;
         
         a:visited{color: white;}
+
+        a:hover{
+            transform: scale(1.2);
+        }
     }
 
 }

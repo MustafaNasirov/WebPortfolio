@@ -49,22 +49,16 @@
             .about__drop-title{
                 margin-bottom: 1rem;
             }
-            
-            .about__dropbtn{
-                background-color: $about-btn-color;
-                display: block;
-                color: $text-color;
-                text-align: center;
-                border : 0.5rem;
-                border: white;
-                margin-bottom: 0.5rem;
-                padding: 0.5rem 0.5rem;
-                width: 100%;
-                cursor: pointer;
-            }
-
+        
             .about__item{
                 width: 100%;
+            }         
+
+            .about__item:hover{
+                
+                .about__item-span{
+                    background-color: $about-btn-hover;
+                }
             }
 
             .about__item-span {
@@ -75,13 +69,13 @@
                 font-variant : small-caps;
                 cursor : pointer;
                 display: block;
-              }
+            }
 
             .about__item-span:after {
                 float: right;
                 right: 10%;
                 content: "+";
-              }
+            }
 
             .about__item-expanded {
                 clear:both;
@@ -91,7 +85,6 @@
                 text-align: center;
                 transition: height .4s ease;
                 background-color: $about-drop-color;
-
               }
             
             .about__item-expanded li {padding : 2rem;}
