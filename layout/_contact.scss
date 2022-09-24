@@ -29,6 +29,8 @@
 
     .contact__btn:hover{
         background-color: $contact-btn-color-hover;
+        transform: scale(1.1);
+        transition: ease-in 0.25s;
     }
 
     .contact__email{

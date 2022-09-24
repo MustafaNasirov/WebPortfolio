@@ -175,6 +175,7 @@
   }
 }
 .about {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -193,14 +194,13 @@
   margin-bottom: 1rem;
 }
 .about .about__details .about__description {
-  font-size: 0.8rem;
   font-family: "Inter", sans-serif;
 }
 .about .about__image {
   border: solid 0.35rem rgb(90, 79, 72);
   width: 35%;
   align-self: center;
-  margin: 0.5rem;
+  margin: 2rem;
   max-width: 30rem;
 }
 .about .about__grid {
@@ -222,6 +222,8 @@
 }
 .about .about__grid .about__dropsection .about__item:hover .about__item-span {
   background-color: rgb(105, 92, 83);
+  transform: scaleX(1.025);
+  transition: ease-in-out 0.25s;
 }
 .about .about__grid .about__dropsection .about__item-span {
   padding: 2rem;
@@ -325,6 +327,8 @@
 }
 .contact .contact__btn:hover {
   background-color: rgb(95, 87, 73);
+  transform: scale(1.1);
+  transition: ease-in 0.25s;
 }
 .contact .contact__email {
   font-family: "Inter", sans-serif;

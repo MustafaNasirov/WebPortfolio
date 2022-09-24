@@ -2,6 +2,7 @@
 
 
 .about{
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;   
@@ -22,7 +23,6 @@
         }
 
         .about__description{
-            font-size: 0.8rem;
             font-family: $font-inter;
         }
     }
@@ -31,7 +31,7 @@
         border: solid 0.35rem rgb(90, 79, 72);
         width: 35%;
         align-self: center;
-        margin: .5rem;
+        margin: 2rem;
         max-width: 30rem;
     }    
         
@@ -58,6 +58,8 @@
                 
                 .about__item-span{
                     background-color: $about-btn-hover;
+                    transform: scaleX(1.025);
+                    transition: ease-in-out 0.25s;
                 }
             }
 
