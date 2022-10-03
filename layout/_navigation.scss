@@ -10,6 +10,7 @@
     padding: 2rem;
     background-color: $projects-background-color;
     border-radius: 1rem;
+    margin-top: 1rem;
     
 
     .nav__name{
@@ -21,6 +22,22 @@
     
         .nav__name-alt{
             display: inline-block;
+            color: $home-name-color;
+        }
+    }
+
+    .nav__name:hover{
+        color: $home-name-color;
+
+        .nav__name-alt{
+            color: white;
+        }
+    }
+
+    .nav__name-alt:hover{
+        color: white;
+
+        .nav__name{
             color: $home-name-color;
         }
     }
