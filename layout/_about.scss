@@ -34,6 +34,11 @@
         margin: 2rem;
         max-width: 30rem;
     }    
+    .about__image:hover{
+        box-shadow: black 0 0 .5rem;
+        transform: scale(1.025);
+        transition: ease-in-out 0.5s;
+    }
         
     .about__grid{
         margin: 1rem 0rem;
