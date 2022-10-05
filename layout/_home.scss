@@ -7,8 +7,8 @@
 
         #seperator{
             width: 20%;
+            margin-top: 2rem;
             background-color: $seperator;
-            
         }
 
         .home__title{
@@ -19,7 +19,24 @@
         
         .home__description{
             padding: 1.5rem 0rem;
+            margin-top: 1rem;
             font-family: $font-inter;
+            width: 100%;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .home{
+        .home__details{
+            .home__description{
+                width: 60%;
+            }
+
+            .home__title{
+                font-size: 8rem;  
+            }
         }
     }
 }

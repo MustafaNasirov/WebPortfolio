@@ -20,6 +20,7 @@
         
         .about__title{
             margin-bottom: 1rem;
+            font-size: 3rem;
         }
 
         .about__description{
@@ -36,8 +37,8 @@
     }    
     .about__image:hover{
         box-shadow: black 0 0 .5rem;
-        transform: scale(1.025);
-        transition: ease-in-out 0.5s;
+        transform: scale(1.1);
+        transition: ease-in-out 0.35s;
     }
         
     .about__grid{
@@ -53,6 +54,7 @@
 
             .about__drop-title{
                 margin-bottom: 1rem;
+                font-size: 2rem;
             }
         
             .about__item{
