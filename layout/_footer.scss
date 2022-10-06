@@ -1,23 +1,10 @@
 @use "../variables" as *;
 
 .footer__bar{
+    margin-top: 1rem;
     align-items: center;
     
-    .footer__icons{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-        gap: 1rem;
-        
-        a:visited{color: white;}
-
-        a:hover{
-            transform: scale(1.2);
-            transition: ease-in-out 0.1s;
-        }
-    }
+    
 
     .footer__copyright{
         margin-top: 5rem;

@@ -149,6 +149,7 @@
   justify-content: space-evenly;
   justify-items: center;
   align-items: start;
+  margin-top: 3rem;
   width: 100%;
 }
 .projects .projects__grid .projects__grid-item {
@@ -373,22 +374,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2rem;
 }
 .contact .contact__title {
   font-size: 5rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  padding-left: 0.25rem;
+  margin: 2rem 0rem 1rem;
+  padding-bottom: 1rem;
   text-align: center;
   display: inline-block;
   position: relative;
 }
 .contact .contact__title:after {
   background: none repeat scroll 0 0 transparent;
-  bottom: 0;
+  bottom: 5rem;
   content: "";
   display: block;
-  height: 2px;
+  height: 0.125rem;
   left: 50%;
   position: absolute;
   background: #fff;
@@ -417,28 +418,26 @@
   transform: scale(1.1);
   transition: ease-in 0.25s;
 }
-.contact .contact__email {
-  font-family: "Inter", sans-serif;
-  padding-top: 1rem;
-}
-
-.footer__bar {
-  align-items: center;
-}
-.footer__bar .footer__icons {
+.contact .contact__icons {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  margin-top: 2rem;
   gap: 1rem;
 }
-.footer__bar .footer__icons a:visited {
+.contact .contact__icons a:visited {
   color: white;
 }
-.footer__bar .footer__icons a:hover {
+.contact .contact__icons a:hover {
   transform: scale(1.2);
   transition: ease-in-out 0.1s;
+}
+
+.footer__bar {
+  margin-top: 1rem;
+  align-items: center;
 }
 .footer__bar .footer__copyright {
   margin-top: 5rem;
